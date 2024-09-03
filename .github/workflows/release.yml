@@ -107,7 +107,7 @@ jobs:
           echo "$(go env GOPATH)/bin" >> $GITHUB_PATH
           echo "::set-output name=version::${GITHUB_REF##*/}"
       - name: 'Download artifacts'
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           path: artifact
       - name: 'Upload artifacts to Cloudsmith'

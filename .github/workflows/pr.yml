@@ -82,7 +82,7 @@ jobs:
       - name: 'Checkout'
         uses: actions/checkout@v2
       - name: 'Download workflow artifact - Docker image'
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: docker-image
       - name: 'Load Docker image'
@@ -136,7 +136,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: 'Download workflow artifact - Docker image'
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: docker-image
       - name: 'Load Docker image'
